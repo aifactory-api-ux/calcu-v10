@@ -11,7 +11,7 @@ services:
       - postgres_data:/var/lib/postgresql/data
       - ./db_init.sql:/docker-entrypoint-initdb.d/migration.sql:ro
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U user -d calcu"]
+      test: ["CMD-SHELL", "pg_isready -U user"]
       interval: 5s
       timeout: 5s
       retries: 5
