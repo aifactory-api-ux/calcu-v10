@@ -14,7 +14,6 @@ function App() {
     error,
     history,
     calculate,
-    clear,
     fetchHistory,
   } = useCalculator();
 
